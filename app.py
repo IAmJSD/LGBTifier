@@ -21,7 +21,7 @@ def make_strip_red(strip):
 @lgbt_methods.append
 def make_strip_orange(strip):
     strip[:, :, 0] = 0
-    strip[:, :, 1] = 165
+    strip[:, :, 2] = 255
     return strip
 
 
@@ -40,8 +40,8 @@ def make_strip_green(strip):
 
 @lgbt_methods.append
 def make_strip_blue(strip):
-    strip[:, :, 1] = 0
-    strip[:, :, 2] = 0
+    strip[:, :, 1] = 60
+    strip[:, :, 2] = 60
     return strip
 
 
